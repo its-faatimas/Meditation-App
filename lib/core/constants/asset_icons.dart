@@ -1,3 +1,3 @@
 class AssetIcons {
-  static const logo = 'assets/icons/Logo.svg';
+  static const logo = 'assets/images/Logo.svg';
 }

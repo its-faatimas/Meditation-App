@@ -18,7 +18,7 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            LogoWidget(),
+            LogoWidget(height: getProportionateScreenHeight(49.0),width: getProportionateScreenWidth(43.41),),
             SizedBox(height: getProportionateScreenHeight(31.0)),
             AuthText(),
             SizedBox(height: getProportionateScreenHeight(45.0)),

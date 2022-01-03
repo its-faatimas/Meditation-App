@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meditation_app/core/components/exporting_packages.dart';
+import 'package:meditation_app/view/screens/home/splash_screen.dart';
 
 void main() {
   runApp(MultiProvider(
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Meditation App',
       theme: ThemeData(
           primarySwatch: Colors.blue, canvasColor: ConstColors.textMeditation),
-      home: AuthPage(),
+      home: SplashScreen(),
     );
   }
 }
