@@ -17,8 +17,8 @@ class LogoWidget extends StatelessWidget {
       AssetIcons.logo,
       color: ConstColors.whiteSeventy,
       fit: BoxFit.cover,
-      height: getProportionateScreenHeight(height),
-      width: getProportionateScreenWidth(width),
+      height: getProportionScreenHeight(height),
+      width: getProportionScreenWidth(width),
     );
   }
 }

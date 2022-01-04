@@ -11,7 +11,7 @@ class SignUpPage extends StatelessWidget {
     _authProvider = context.watch();
     return Padding(
       padding: EdgeInsets.symmetric(
-        horizontal: getProportionateScreenWidth(27.0),
+        horizontal: getProportionScreenWidth(27.0),
       ),
       child: Form(
         key: _authProvider.formKey,
@@ -20,23 +20,23 @@ class SignUpPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             LogoWidget(),
-            SizedBox(height: getProportionateScreenHeight(31.0)),
+            SizedBox(height: getProportionScreenHeight(31.0)),
             AuthText(),
-            SizedBox(height: getProportionateScreenHeight(45.0)),
+            SizedBox(height: getProportionScreenHeight(45.0)),
             InputField(
               inputAction: TextInputAction.next,
               inputType: TextInputType.name,
               hint: 'Name',
               controller: _authProvider.emailController,
             ),
-            SizedBox(height: getProportionateScreenHeight(30.0)),
+            SizedBox(height: getProportionScreenHeight(30.0)),
             InputField(
               inputAction: TextInputAction.next,
               inputType: TextInputType.emailAddress,
               hint: 'Email Address',
               controller: _authProvider.nameController,
             ),
-            SizedBox(height: getProportionateScreenHeight(30.0)),
+            SizedBox(height: getProportionScreenHeight(30.0)),
             InputField(
               inputAction: TextInputAction.done,
               inputType: TextInputType.visiblePassword,
@@ -44,14 +44,14 @@ class SignUpPage extends StatelessWidget {
               obscureText: true,
               controller: _authProvider.passwordController,
             ),
-            SizedBox(height: getProportionateScreenHeight(9.0)),
+            SizedBox(height: getProportionScreenHeight(9.0)),
             Align(
               alignment: Alignment.centerRight,
               child: CustomText('Forgot Password?'),
             ),
-            SizedBox(height: getProportionateScreenHeight(29.0)),
+            SizedBox(height: getProportionScreenHeight(29.0)),
             CustomButton(onPressed: () {}, label: 'SIGN UP'),
-            SizedBox(height: getProportionateScreenHeight(18.0)),
+            SizedBox(height: getProportionScreenHeight(18.0)),
             ChangeAuthPage(),
           ],
         ),

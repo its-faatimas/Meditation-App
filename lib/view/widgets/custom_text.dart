@@ -21,7 +21,7 @@ class CustomText extends StatelessWidget {
       data,
       style: TextStyle(
         color: color,
-        fontSize: getProportionateScreenWidth(size),
+        fontSize: getProportionScreenWidth(size),
         fontWeight: weight,
       ),
     );

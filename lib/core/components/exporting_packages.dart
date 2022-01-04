@@ -1,6 +1,5 @@
 
 // Screens
-export 'package:meditation_app/view/screens/home/home_page.dart';
 export 'package:meditation_app/view/screens/auth/auth_page.dart';
 export 'package:meditation_app/view/screens/auth/login_page.dart';
 export 'package:meditation_app/view/screens/auth/sign_up_page.dart';
@@ -32,8 +31,8 @@ export 'package:flutter_svg/flutter_svg.dart';
 
 
 // Screens
-export 'package:meditation_app/view/screens/home/home_page.dart';
-
+export 'package:meditation_app/view/screens/onboard/home_page.dart';
+export 'package:meditation_app/view/screens/meditation_screen/components/meditation_data.dart';
 // Widgets
 export 'package:meditation_app/view/widgets/my_bottom_nav_bar.dart';
 

@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   provider: ^6.0.2
   flutter_svg: ^1.0.0
+  dio: ^4.0.4
+  audioplayers: ^0.20.1
 
 
 dev_dependencies:
@@ -63,6 +65,19 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/login/
+    - assets/main/
+    - assets/meditation/
+    - assets/onboarding/
+    - assets/profile/
+    - assets/sign_up/
+    - assets/sleep/
+    - assets/sound/
+    - assets/sounds/
+    - assets/splash/
+    - assets/tools/
+    - assets/music/
+    - assets/
     # - assets/images/Character/
 
   # An image asset can refer to one or more resolution-specific "variants", see

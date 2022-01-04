@@ -23,8 +23,8 @@ class AuthPage extends StatelessWidget {
 
   _showLeaf() => Image.asset(
         AssetImages.login,
-        height: getProportionateScreenHeight(812.0),
-        width: getProportionateScreenWidth(375.0),
+        height: getProportionScreenHeight(812.0),
+        width: getProportionScreenWidth(375.0),
         alignment: Alignment.bottomCenter,
       );
 }

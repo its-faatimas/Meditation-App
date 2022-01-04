@@ -16,7 +16,7 @@ class AuthText extends StatelessWidget {
           size: 30.0,
           weight: FontWeight.w500,
         ),
-        SizedBox(height: getProportionateScreenHeight(4.0)),
+        SizedBox(height: getProportionScreenHeight(4.0)),
         CustomText(_provider.isLogin ? _loginText : _signUpText, size: 22.0)
       ],
     );

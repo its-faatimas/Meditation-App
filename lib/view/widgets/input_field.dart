@@ -36,8 +36,8 @@ class InputField extends StatelessWidget {
       hintText: hint,
       hintStyle: _setTextStyle(),
       contentPadding: EdgeInsets.symmetric(
-        horizontal: getProportionateScreenWidth(12.0),
-        vertical: getProportionateScreenHeight(10.0)
+        horizontal: getProportionScreenWidth(12.0),
+        vertical: getProportionScreenHeight(10.0)
       )
     );
   }
@@ -53,7 +53,7 @@ class InputField extends StatelessWidget {
   TextStyle _setTextStyle() => TextStyle(
     color: ConstColors.grey,
     fontWeight: FontWeight.w400,
-    fontSize: getProportionateScreenWidth(18.0),
+    fontSize: getProportionScreenWidth(18.0),
 
   );
 }

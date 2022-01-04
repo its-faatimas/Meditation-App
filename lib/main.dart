@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:meditation_app/core/components/exporting_packages.dart';
-import 'package:meditation_app/view/screens/home/splash_screen.dart';
+import 'package:meditation_app/provider/meditation_provider.dart';
+import 'package:meditation_app/provider/profile_provider.dart';
+import 'package:meditation_app/provider/sounds_provider.dart';
+import 'package:meditation_app/view/screens/onboard/splash_screen.dart';
 
 void main() {
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (_) => AuthProvider()),
+      ChangeNotifierProvider(create: (_)=> ProfileProvider()),
+      ChangeNotifierProvider(create: (_) => MeditationProvider()),
+      ChangeNotifierProvider(create: (_)=> SoundsProvider())
+
     ],
     child: const MyApp(),
   ));

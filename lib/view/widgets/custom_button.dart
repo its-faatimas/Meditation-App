@@ -16,18 +16,18 @@ class CustomButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       child: Text(label, style: TextStyle(
-        fontSize: getProportionateScreenWidth(25.0),
+        fontSize: getProportionScreenWidth(25.0),
         fontWeight: FontWeight.w500,fontFamily: "Alegreya Sans",
       ),),
       style: ElevatedButton.styleFrom(
         primary: ConstColors.green,
         fixedSize: Size(
           MediaQuery.of(context).size.width,
-          getProportionateScreenHeight(61.0),
+          getProportionScreenHeight(61.0),
         ),
         shape: RoundedRectangleBorder(
           borderRadius:
-              BorderRadius.circular(getProportionateScreenWidth(10.0)),
+              BorderRadius.circular(getProportionScreenWidth(10.0)),
         ),
       ),
     );
