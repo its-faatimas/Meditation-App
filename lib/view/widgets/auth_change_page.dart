@@ -2,7 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:meditation_app/core/components/exporting_packages.dart';
 
 class ChangeAuthPage extends StatelessWidget {
-  ChangeAuthPage({Key? key}) : super(key: key);
+  VoidCallback? onPressed;
+  bool isOnboardingPage;
+  ChangeAuthPage({
+    Key? key,
+    this.onPressed,
+    this.isOnboardingPage = false,
+  }) : super(key: key);
   late AuthProvider _provider;
 
   @override
@@ -13,7 +19,7 @@ class ChangeAuthPage extends StatelessWidget {
       children: [
         CustomText(_provider.isLogin ? _loginText : _signUpText, size: 20.0),
         TextButton(
-          onPressed: _provider.onPageChanged,
+          onPressed: onPressed ?? _provider.onPageChanged,
           child: CustomText(
             _provider.isLogin ? 'Sign Up' : 'Sign In',
             size: 20.0,

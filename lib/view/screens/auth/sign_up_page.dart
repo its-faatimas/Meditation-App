@@ -50,7 +50,7 @@ class SignUpPage extends StatelessWidget {
               child: CustomText('Forgot Password?'),
             ),
             SizedBox(height: getProportionateScreenHeight(29.0)),
-            CustomButton(onPressed: () {}, label: 'SIGNUP'),
+            CustomButton(onPressed: () {}, label: 'SIGN UP'),
             SizedBox(height: getProportionateScreenHeight(18.0)),
             ChangeAuthPage(),
           ],
